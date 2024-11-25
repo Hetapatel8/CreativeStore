@@ -1,0 +1,57 @@
+<div class="media_text_inner"></div>
+
+{% schema %}
+{
+  "name": "Media with text",
+  "tag": "section",
+  "class": "media_text_section",
+  "max_blocks": 1,
+  "settings": [
+    {
+      "type": "inline_richtext",
+      "label": "Heading",
+      "id": "section_heading"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "media_grid",
+      "name": "Media Grid",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "image_picker",
+          "label": "Image",
+          "id": "grid_image"
+        },
+        {
+          "type": "video",
+          "label": "Video",
+          "id": "grid_video"
+        },
+        {
+          "type": "inline_richtext",
+          "label": "Heading",
+          "id": "grid_heading"
+        },
+        {
+          "type": "richtext",
+          "label": "Description",
+          "id": "grid_description"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Media with text"
+    }
+  ]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
